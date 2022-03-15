@@ -4,27 +4,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Profile</title>
+
+	<!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<!--==================== UNICONS ====================-->
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   </head>
   <body>
+	 	 <!--==================== HEADER ====================-->
 		<header>
 			<nav>
 				<div class="header">
 					<div class="logo">12A FrontEnd</div>
 					<div >
 						<ul class="menu">
-							<li><a href="#home">Home</a></li>
-							<li><a href="#member">Member</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li class="nav__item">
+								<a href="#home" class="nav__link active-link">
+									<i class="uil uil-estate nav__icon"></i>
+								Home</a>
+							</li>
+							<li class="nav__item">
+								<a href="#member" class="nav__link">
+									<i class="uil uil-user nav__icon"></i> Member
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#contact" class="nav__link">
+									<i class="uil uil-message nav__icon"></i> Contact
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</header>
+
 		<!-- main content -->
 		 <div class="container">
-			 <!-- halaman home -->
+			 <!--==================== HOME ====================-->
 			 <section id="home" >
 				<div class="home_img">
 					<img src="assets/image/main.svg">
@@ -38,7 +56,7 @@
 				</div>
 			 </section>
 
-			 <!-- halaman member -->
+			 <!--==================== MEMBER TEAM ====================-->
 			 <section id="member">
 				 <div class="tengah">
 					 <div class="judul">
@@ -76,44 +94,81 @@
 				 </div>
 			 </section>
 
-		<!-- footer -->
-		<footer class="footer-distributed">
-			<div class="footer-left">
-				<h3>12A<span> FrontEnd</span></h3>
-			</div>
-			<div class="footer-center">
-				<div>
-					<i class="fa fa-map-marker"></i>
-					  <p><span>Bertempat secara online</span></p>
+			 <!--==================== CONTACT ME ====================-->
+			 <section id="contact">
+				 <div class="tengah">
+					<div class="judul">
+						<h2>Contact Us</h2>
+					</div>
 				</div>
+				<div class="contact">
+					<div class="contact__container container grid">
+						<div>
+							<div class="contact__information">
+								<i class="uil uil-phone contact__icon">
+								</i>
+		
+								<div>
+									<h3 class="contact__title">Call Us</h3>
+									<span class="contact__subtitle">+62822-4144-xxxx</span>
+								</div>
+							</div>
+		
+							<div class="contact__information">
+								<i class="uil uil-envelope contact__icon">
+								</i>
+		
+								<div>
+									<h3 class="contact__title">Email</h3>
+									<span class="contact__subtitle">12AFrontend@gmail.com</span>
+								</div>
+							</div>
+		
+							<div class="contact__information">
+								<i class="uil uil-map-marker contact__icon">
+								</i>
+		
+								<div>
+									<h3 class="contact__title">Location</h3>
+									<span class="contact__subtitle">Indonesia</span>
+								</div>
+							</div>
+						</div>
+		
+						<form action="" class="contact__form grid">
+							<div class="contact__inputs grid">
+								<div class="contact__content">
+									<label for="" class="contact__label">Name</label>
+									<input type="text" class="contact__input">
+								</div>
+		
+								<div class="contact__content">
+									<label for="" class="contact__label">Email</label>
+									<input type="email" class="contact__input">
+								</div>
+							</div>
+							<div class="contact__content">
+								<label for="" class="contact__label">Message</label>
+								<textarea name="" id="" cols="0" rows="7" type="email" class="contact__input"></textarea>
+							</div>
+		
+							<div>
+								<a href="#" class="button button--flex">
+									Send Message
+									<i class="uil uil-message button__icon"></i>
+								</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		 </div>
 
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+91 22-27782183</p>
-				</div>
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="https://www.samuelpasaribu.com">kelompok12A@gmail.com</a></p>
-				</div>
-			</div>
-			<div class="footer-right">
-				<p class="footer-company-about">
-					<span>About our team</span>
-					manusia biasa yang tertarik dengan frontend web</p>
-				<div class="footer-icons">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-instagram"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-youtube"></i></a>
-				</div>
-			</div>
-		</footer>
-	
+		 <!--==================== FOOTER ====================-->
 		<footer>
-		<p>&copy; 2022 Kelompok 12A kelas F</p>
+			<p>&copy; 2022 Kelompok 12A kelas F</p>
 		</footer>
-
+<!--==================== JavaScript ====================-->
 	<script src="assets/js/main.js"></script>
   </body>
 </html>
